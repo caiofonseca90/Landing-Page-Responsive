@@ -1,0 +1,58 @@
+
+/*animation-h2-text*/
+.text-content-container h2{
+    animation: animah2 2s  ease-in-out infinite alternate;
+}
+
+
+@keyframes animah2{
+    0%{
+        filter: contrast(0.5);
+        filter: drop-shadow(40px 100px 50px  #9a53e7);
+        transform: translate3d(1,1,1);
+    }
+    100%{ 
+        filter: contrast(0.5);
+        filter: drop-shadow(-35px -35px 100px #1835c5);
+        transform: translate3d(0,0,0);
+    }
+}
+    
+/*animation-bg*/
+body {
+    animation: animabg 60s ease-in-out alternate infinite;
+    background: url(/assets/imgs/bg-tags.png), 
+    linear-gradient(to right, var(--gradiente-bg-primary), var(--gradiente-bg-secondary));
+}
+
+@keyframes animabg{
+    0%{ 
+        
+        background-repeat: repeat-x;
+        background-position: 500%;
+    }
+
+    
+    100%{
+
+        
+        background-repeat: repeat-x;
+        background-position: 1000%;
+    }
+}
+
+
+.logo-header img{
+    animation: animaLogoimg 1s ease-in-out infinite alternate ;
+}
+
+@keyframes animaLogoimg{
+    0%{ 
+        transform: perspective(100px) rotateY(5deg);
+    }
+    100%{
+        transform: perspective(100px) rotateY(-5deg);
+    }
+    
+    
+}
