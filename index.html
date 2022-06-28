@@ -8,50 +8,73 @@
     rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/style.css/style.css">
+    <link rel="stylesheet" href="assets/script.js/main.js">
     <link rel="stylesheet" href="assets/style.css/fonts.css">
     <link rel="stylesheet" href="assets/style.css/anmimation.css">
 
-    <title>Document</title>
+    <title>Webnar Gratuito</title>
 </head>
 <body>
 
-   <header class="top-box-container">
+    <header class="top-box-container">
         <nav>
             <div class="logo-header">
-                <a href="index.html"><img src="assets/imgs/foguete_img.png" alt="Foguete-img"></a>
+                <a href="https://www.linkedin.com/in/caio-fonseca-01251217b/"><img src="assets/imgs/foguete_img.png" alt="Foguete-img"></a>
             </div>
         </nav>
-    </header>         
-            <main class="main-container">
-                <section class="content-left_side">
-                    <div class="text-content-container">
-                        <h2>Webnar GRATUITO</h2>
-                    </div>
-                    <div class="text-cntent-container">
-                        <h2>Tudo sobre a carreira de <span>Desenvolvedor Front-End</span> </h2>
-                    </div>
-                    <div class="text-content-container">
-                        <p>
-                        Venha fazer parte dessa imersão <span>GRATUITA</span> que acontecerá
-                        durante o primeiro dia do curso. 
-                        </p>
-                    </div>
-                    <div class="button-container">
-                        <a href="#">Quero me Inscrever</a>
-                        
-                    </div>
-                </section>
-                <aside class="content-right_side">
-                    
-                    <div class="img-content-container">
-                        <img src="assets/imgs/logo_lampada.png" alt="img_lampada">
-                    </div>
-                </aside>
-                
-               
-            </main>
-    
+    </header>  
+    <!-- Content page -->       
+
+    <main class="main-container">
+        <section class="content-left_side">
+            <div class="text-content-container">
+                <h2>Webnar GRATUITO</h2>
+            </div>
+            <div class="text-cntent-container">
+                <h2>Tudo sobre a carreira de <span>Desenvolvedor Front-End</span> </h2>
+            </div>
+            <div class="text-content-container">
+                <p>
+                Venha fazer parte dessa imersão <span>GRATUITA</span> que acontecerá
+                durante o primeiro dia do curso. 
+                </p>
+            </div>
+            <div class="button-container">
+                <a href="#" class="btnsend" type="submit" >Quero me Inscrever</a>
+            </div>
+        </section>
+        <!-- Content page IMG-->       
+        <picture class="content-right_side">
             
+            <div class="img-content-container">
+                <img src="assets/imgs/logo_lampada.png" alt="img_lampada" class="lampimg">
+            </div>
+        </picture>
+
+    </main>
+                <!--Bootstrap-->
     
+    <form action="#" class="mb-5 pt-3 container">
+        <span class="exit">X</span>
+        <h2 class="align-center" >Preencha os campos abaixo.</h2>
+        <div class="mb-3 container">
+            <label class="form-label pt-4">Nome Completo:</label>
+            <input type="text" class="name form-control fs-5" placeholder="Nome">
+            <label class="form-label pt-5">E-mail para contato:</label>
+            <input type="email" class="email form-control fs-5"  placeholder="Digite seu E-mail">
+        </div>
+        <div class="mb-2 container">
+            <label for="exampleFormControlTextarea1" class="form-label pt-5">Deixe seu comentario:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+        </div>
+        <div class="container pt-5 text-center">
+            <a href="#" type="submit" class="enviar form-control fs-1 text-decoration-none bg-opacity-75 text-bg-success" onclick="validar()">Enviar</a>
+        </div>
+        <div class="alert-erro container p-2 m t-4 bg bg-black text-center fs-4">
+            <p class="alert-text"></p>
+        </div>
+    </form>
+
+    <script src="assets/script.js/main.js"></script>
 </body>
 </html>
